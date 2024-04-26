@@ -1,0 +1,222 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+*{color: white;}
+
+/*HEADER*/
+
+.header{
+    width: 100vw;
+    position:sticky;
+    background-color: purple;
+    top: 0;
+}
+
+.h1header{
+    margin-top: 0;
+    margin-bottom: 0.1;
+    font-size: 3vw;
+}
+
+.container{
+    margin-top:0;
+    width: 100vw;
+}
+
+                            /*TITULO*/
+
+
+.containerTitulo{
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    background: purple;
+    border-radius: 3%;
+}
+
+.h2Titulo{
+    margin: 1.5%;
+    font-size: 2vw;
+}
+
+                            /*TAGS*/
+
+                            
+.pTags{
+    font-size: 1.5vw;
+    margin: 1% 0 4% 0;
+    color: grey;
+}
+
+.pTags::before{
+    content: "•";
+    padding: 0 .5% 0 .5%;
+}
+
+                            /*PRINCIPAL*/
+
+.containerPrincipal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:auto;
+}
+
+.divimgPrincipal{
+    width: 25vw;
+    margin-right: 20px;
+}
+
+.imgPrincipal{  
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+.divderechaprincipal{
+    width: 40vw;
+}
+
+.iframePrincipal{
+    width: 100%;
+    height: 400px;
+}
+
+.divdescripcion{
+    width: 100%;
+    font-size: 1.5vw;
+}
+
+.pPrincipal{
+    font-size: .8em;
+}
+
+
+
+
+/*FORMULARIO*/
+
+.containerFormulario{
+    border: 1px purple solid;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    padding-left: 1px;
+    padding-right: 1px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form{
+    text-align: center;
+    width: auto;
+}
+
+.containerFuncion{
+    text-align: center;
+}
+
+.salas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.D{
+    width: auto;
+    padding: 0;
+    margin:0;
+    margin-bottom: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    
+}
+
+.pSalas{
+    margin: 0 5px;
+}
+
+.h2Formulario{
+    font-size: 3vw;
+    color: purple;
+    text-decoration: underline;
+    text-align: center;
+}
+
+input{
+    color: black;
+    width: 20vw;
+    height: 2vw;
+}
+
+.inputcvc{
+    color: black;
+    width: 3.5vw;
+    height: 2vw;
+}
+
+select{
+    color: black;
+}
+
+option{
+    color: black;
+}
+
+.terminosycondiciones{
+    display: flex;
+    justify-content: center;
+}
+
+.tilde{
+    width: auto;
+    padding: 0;
+    margin:0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+
+
+.pterminosycondiciones{
+    margin: 0 0 0 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .containerFormulario {
+        padding: 10px;
+    }
+    input, .inputcvc, select, option {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*FOOTER*/
+
+footer{
+    .flechaArriba {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+  }
+
+
+  
+  .social-media a {
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  .social-media a:hover {
+    color: #ddd;
+  }
+  
+
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Cinema Adrogue - El planeta de los simios</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1header">CINEMA<br>ADROGUE</h1>
+    </header>
+    <div class="container">
+        <div class="containerTitulo">
+            <h2 class="h2Titulo">EL PLANETA DE LOS SIMIOS</h2>
+        </div>
+        <div class="containerTags">
+            <p class="pTags">24 de mayo de 2024, Acción, 2hs 25min</p>
+        </div>
+        <div class="containerPrincipal">
+            <div class="divimgPrincipal">
+                <img class="imgPrincipal" src="/imagenes/elplanetadelossimios.jpg" alt="elplanetadelossimios">
+            </div>
+            <div class="divderechaprincipal">
+                <iframe class="iframePrincipal" src="https://www.youtube.com/embed/DDWWwEiWHJw?si=aMw50Dh_Wv8SMYfn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="divdescripcion">
+                <p class="pPrincipal">El director Wes Ball le da nueva vida a la épica franquicia global situada varias generaciones en el futuro tras el reinado de César, en el que los simios son la especie dominante que vive en armonía y los humanos han quedado reducidos a vivir en las sombras. Mientras un nuevo y tiránico líder simio construye su imperio, un joven simio emprende un viaje desgarrador que le llevará a cuestionarse todo lo que sabe sobre el pasado y a tomar decisiones que definirán el futuro de simios y humanos por igual.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br>
+        <h2 class="h2Formulario">Compra tu entrada!</h2>
+    <div class="containerFormulario">
+        <div class="containerFuncion">
+                <p>Elija la función</p>
+            <div class="salas">       
+                <input class="tilde" type="radio" name=“opcion" value="2D">2D
+                <input class="D" type="radio" name=“opcion" value="3D">3D
+             </div>
+        <p>Seleccione la fecha</p>
+        <select name="fecha">
+            <option>24/5</option>
+            <option>25/5</option>
+            <option>26/5</option>
+            <option>27/5</option>
+            <option>28/5</option>
+        </select>
+        <p>Seleccione el horario</p>
+        <select name="horario">
+            <option>9:00hs</option>
+            <option>12:00hs</option>
+            <option>15:00hs</option>
+            <option>18:00hs</option>
+            <option>21:00hs</option>
+            <option>23:45hs</option>
+        </select>
+        </div>
+        <form class="form" action="procesar_pago" method="post">
+            <label for="tarjeta">Seleccione su tipo de Tarjeta:</label>
+            <select id="tarjeta" name="tarjeta">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+              <option value="mercadopago">MercadoPago</option>
+            </select><br><br>
+
+            <label for="numerotarjeta">Número de la tarjeta:</label>
+            <input size="30px" type="number" name="numerotarjeta" id="numerotarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required><br><br>
+            <label for="nombre_titular">Nombre del Titular:</label>
+            <input type="text" id="nombre_titular" name="nombre_titular" required><br><br>
+
+            <label for="fecha_expiracion">Fecha de Expiración (MM/AA):</label>
+            <input type="text" id="fecha_expiracion" name="fecha_expiracion" placeholder="MM/AA" maxlength="5" required><br><br>
+
+            <label  for="codigo_seguridad">Código de Seguridad (CVV/CVC):</label>
+            <input class="inputcvc" type="text" id="codigo_seguridad" name="codigo_seguridad" placeholder="XXX" maxlength="4" required><br><br>
+            <div class="terminosycondiciones">
+            <input type="radio" class="tilde"><p class=pterminosycondiciones>Leí y acepto los <a href="/Terminosycondiciones/terminosycondiciones.html" target="_blank">Terminos y condiciones</a></p>
+            </div>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+<br><br><br><br><br>
+<footer style="background-color: #131010; color: #444444; padding: 20px; text-align: center; margin-top: 10px;">
+    <div class="social-media">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <p>© 2024 Todos los derechos reservados.</p>
+
+    <a href="#" class="flechaArriba">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#7c3aed" d="M11 11.8V15q0 .425.288.713T12 16q.425 0 .713-.288T13 15v-3.2l.9.9q.275.275.7.275t.7-.275q.275-.275.275-.7t-.275-.7l-2.6-2.6q-.3-.3-.7-.3t-.7.3l-2.6 2.6q-.275.275-.275.7t.275.7q.275.275.7.275t.7-.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"/></svg>
+  </a>
+  </footer>
+</body>
+</html>

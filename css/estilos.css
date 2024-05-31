@@ -7,17 +7,52 @@ body{
 
 /*HEADER*/
 
-.header{
-    width: 100vw;
-    position:sticky;
-    background-color: purple;
-    top: 0;
-}
 
-.h1header{
-    margin-top: 0;
-    margin-bottom: 0.1;
-    font-size: 3vw;
+header{
+
+    max-height: 10vh;
+
+    .navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    }
+  
+    .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #fff;
+    }
+  
+    .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    }
+  
+    .navbar-toggler {
+    background: #fff;
+    }
+  
+    .navbar-nav {
+    text-align: center;
+    }
+  
+    .nav-link {
+    padding: .2rem 1rem;
+    }
+  
+    .nav-link.active,.nav-link:focus{
+    color: #fff;
+    }
+  
+    .navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    }
+  
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+    }
 }
 
 .container{
@@ -25,23 +60,6 @@ body{
     width: 100vw;
 }
 
-                            /*TITULO*/
-
-
-.containerTitulo{
-    width: 100%;
-    height: auto;
-    padding: 0 0 0 0;
-    display: flex;
-    justify-content: center;
-    background: purple;
-    border-radius: 3%;
-}
-
-.h2Titulo{
-    margin: 1.5%;
-    font-size: 2vw;
-}
 
                             /*TAGS*/
 
@@ -200,23 +218,71 @@ option{
 /*FOOTER*/
 
 footer{
+    height: 10vh;
+    display: flex;
+
     .flechaArriba {
       position: fixed;
       bottom: 20px;
       right: 20px;
       cursor: pointer;
   }
+  }
+
+  /*INICIAR SESION*/
+  
+.tituloRegistrarse{
+    font-size: 2.5vw;
+}
+
+  .containerLogin{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tituloRegistrarse{
+    text-align: center;
+  }
+
+  .formulario{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .usuario{
+    margin: 1vw 0 0 0;
+  }
 
 
-  
-  .social-media a {
-    color: #fff;
-    margin: 0 10px;
-  }
-  
-  .social-media a:hover {
-    color: #ddd;
-  }
-  
+  .inputContraseña{
+        margin: 1vw 0 0 0;
+      }
 
-  }
+#errorUsuario{
+    color: red;
+    max-width: 300px;
+    width: 100%;
+    display: inline-block;
+}
+
+#errorContraseña{
+    color: red;
+    max-width: 300px;
+    width: 100%;
+    display: inline-block;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.divBoton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
